@@ -17,30 +17,7 @@ body {
 </head>
 
 <body>
-<audio src="Blue moon.mp3" loop="loop" controls="controls" autoplay="autoplay"></audio>
-<script>
-  var music = document.getElementById("music");
-  var currentTime = 0;
-
-  // 监听音乐播放事件
-  music.addEventListener("timeupdate", function() {
-    currentTime = music.currentTime;
-  });
-
-  // 监听页面离开事件
-  window.addEventListener("beforeunload", function() {
-    sessionStorage.setItem("currentTime", currentTime);
-  });
-
-  // 监听页面加载事件
-  window.addEventListener("load", function() {
-    var storedTime = sessionStorage.getItem("currentTime");
-    if (storedTime) {
-      music.currentTime = parseFloat(storedTime);
-      music.play();
-    }
-  });
-</script>
+	<audio src="Blue moon.mp3" loop="loop" controls="controls" autoplay="autoplay"></audio>
 <span style="font-size: 10px"></span>
 <table width="1013" border="1" align="center">
   <tbody>
@@ -70,7 +47,7 @@ body {
     <tr>
       <td rowspan="2" bgcolor="#A9DAF7">        <blockquote>
           <p style="font-family: '黑体';">&nbsp;中文名为曼彻斯特足球俱乐部，简称为曼城俱乐部。球迷一般将其叫为曼城，自称为城迷或城民，源于英国球迷自称的Citizen;<br>
-          而因为球队队徽酷似圆月，因而也被叫作蓝月亮，这其中也有<a href="web/Beady eyes.html">Beady eyes</a>乐队所作的队歌<a href="web/music.html">Blue Moon</a>的影响。</p>
+          而因为球队队徽酷似圆月，因而也被叫作蓝月亮，这其中也有<a href="web/Beady eyes.html">Beady eyes</a>乐队所作的队歌<a href="web/Blue moon.html">Blue Moon</a>的影响。</p>
       </blockquote>      </td>
       <td align="center" bgcolor="#A9DAF7" style="font-size: 20px;"><a href="web/Beady eyes.html">Beady eyes</a>乐队</td>
     </tr>
